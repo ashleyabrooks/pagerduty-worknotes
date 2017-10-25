@@ -34,7 +34,6 @@ def do_get_request(endpoint, resource, payload={}):
 
         # Pagination handling if there are over 100 resources returned
         try:
-            print("in try statement")
             if r["more"] == True:
                 output = r 
                 payload["offset"] = 100
